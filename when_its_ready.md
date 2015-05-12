@@ -1,27 +1,30 @@
-# When the Translation is Ready
+# Publishing translation
 
-Time to explain our process of publishing a new translation of the tutorial. It is far from ideal and we would love to automate it in a future. 
+Yay! If you're reading this, you may just finished your translation. OMG, so awesome. Congratulations! We know how much work it is.
+
+Time to explain our process of publishing a new translation of the tutorial. It is far from ideal and we would love to automate it in a future.
+
+If you want to make it easier for us, you can follow the steps below to submit a pull request straight to the [tutorial repository](https://github.com/DjangoGirls/tutorial). If you are not sure how to do something, just [open a Github issue](https://github.com/DjangoGirls/tutorial/issues/new) and we will take care of that for you.
 
 We use Spanish (`es`) as an example, but of course you need to adjust it to the language you're publishing.
 
-Here is an example PR for publishing translation: https://github.com/DjangoGirls/tutorial/pull/273
-
+Here is an example PR for publishing a translation: https://github.com/DjangoGirls/tutorial/pull/273
 
 Crowdin
 -------
 
 1. Go [here](https://crowdin.com/project/django-girls-tutorial/settings#translations)
-2. Click on `Build project` button
+2. Click on `Build project` button. If you don't have permission to do that part, please email [hello@djangogirls.org](mailto:hello@djangogirls.org).
 3. After the build is done, click on `Download` button next to the language you want to publish.
 
 Move files to tutorial
 -------------
 
 1. Pull our tutorial from master
-2. Create a new branch called `spanish`
+2. Create a new branch called `spanish` (`git checkout -b spanish`)
 3. Unzip file you downloaded from Crowdin. In the folder you will see two folders: es and _book. Copy folder es and place it in root directory of tutorial (next to en, pl, uk).
-4. Edit LANGS.md (in root directory of a tutorial) and add there a link to the language version. Example.
-5. Commit this as a first version to a branch
+4. Edit LANGS.md (in root directory of a tutorial) and add there a link to the language version. [Example](https://github.com/DjangoGirls/tutorial/commit/569f10512bb5642661093dcbcc0ed7683d65cb38).
+5. Commit this as a first version of translation to a branch
 
 Fix what Crowdin broke
 -----------
@@ -47,12 +50,12 @@ This will list you all of the `images` directories you need to copy. You can als
 ```
 LNG=es && cp -r en/css/images $LNG/css/images && cp -r en/django_admin/images $LNG/django_admin/images && cp -r en/django_forms/images $LNG/django_forms/images && cp -r en/django_start_project/images $LNG/django_start_project/images && cp -r en/django_templates/images $LNG/django_templates/images && cp -r en/django_urls/images $LNG/django_urls/images && cp -r en/django_views/images $LNG/django_views/images && cp -r en/domain/images $LNG/domain/images && cp -r en/extend_your_application/images $LNG/extend_your_application/images && cp -r en/how_the_internet_works/images $LNG/how_the_internet_works/images && cp -r en/html/images $LNG/html/images && cp -r en/images $LNG/images && cp -r en/python_introduction/images $LNG/python_introduction/images
 ```
-Above command should cover all of the directories, unless we add some new ones to the tutorial.
+Above command should cover all of the directories, unless we add some new ones to the tutorial. Make sure to check that.
 
 Add credits in es/README.md
 -------
 
-1. Go to [Crowdin project settings, tab "Reports"](https://crowdin.com/project/django-girls-tutorial/settings#reports-details).
+1. Go to [Crowdin project settings, tab "Reports"](https://crowdin.com/project/django-girls-tutorial/settings#reports-details). If you don't have permissions to do that, email [hello@djangogirls.org](mailto:hello@djangogirls.org) again, sorry!
 2. Choose `Custom report` from the left.
 3. Show report for `Words translated`, report language `Spanish`. Then click `Generate`. There you have a list of contributors to the given language, sorted by how much they contributed. Yay!
 4. Add a nice thank you in es/README.md file, [like that](https://github.com/DjangoGirls/tutorial/commit/4a12f8f554c842d8dc0a8484b768e4f2e7afec2e)
@@ -70,4 +73,4 @@ Submit a PR
 
 Create a new Pull Request to master and let others test it ;)
 
-Ta-da! 
+Ta-da!

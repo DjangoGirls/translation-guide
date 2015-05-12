@@ -6,11 +6,9 @@ Go to our [Crowdin page](https://crowdin.com/project/django-girls-tutorial) and 
 
 If so, all you need to do is to create a free account in Crowdin and start contributing!
 
-If the language is missing, you can:
+If the language is missing, you can tell us which language you want to help with by:
 
-* write to us at hello@djangogirls.org
-* create GitHub issue in our [tutorial](https://github.com/DjangoGirls/tutorial/issues/)
+* writing to us at hello@djangogirls.org or
+* creating a GitHub issue in our [tutorial](https://github.com/DjangoGirls/tutorial/issues/).
 
-and tell us which language you want to help with.
-
-We will let you know as soon as we create a language in Crowdin. From now on, you can start translating! Yay!
+We will let you know as soon as we create a language in Crowdin. Once it happens, you can start translating! Yay!

@@ -13,18 +13,18 @@ Here is an example PR for publishing a translation: https://github.com/DjangoGir
 Crowdin
 -------
 
-1. Go to the [settings](https://crowdin.com/project/django-girls-tutorial/settings#translations) page
+1. Go to the [Crowdin settings](https://crowdin.com/project/django-girls-tutorial/settings#translations) page.
 2. Click on the `Build project` button. If you don't have permissions to do that part, please email us at [hello@djangogirls.org](mailto:hello@djangogirls.org).
 3. After the build is done, click on the `Download` button next to the language you want to publish.
 
 Move files to the tutorial
 -------------
 
-1. Clone our tutorial from its master branch
-2. Create a new branch called `spanish` (`git checkout -b spanish`)
+1. Clone our tutorial from its master branch.
+2. Create a new branch called `spanish` (`git checkout -b spanish`).
 3. Unzip the file you downloaded from Crowdin. In the unzipped folder you will see two subfolders: `es` and `_book`. Copy the folder named `es` and place it into the root directory of the tutorial (next to `en`, `pl`, `uk`).
-4. Edit LANGS.md (found in the root directory of the tutorial) and add a link to the language version to it. [Example](https://github.com/DjangoGirls/tutorial/commit/569f10512bb5642661093dcbcc0ed7683d65cb38).
-5. Commit this as a first version of your translation to the branch for your language
+4. Edit LANGS.md (found in the root directory of the tutorial) and add a link to the language version to it. Here is an [example](https://github.com/DjangoGirls/tutorial/commit/569f10512bb5642661093dcbcc0ed7683d65cb38).
+5. Commit this as a first version of your translation to the branch for your language.
 
 Fix what Crowdin broke
 -----------
@@ -56,7 +56,7 @@ Add credits in es/README.md
 1. Go to the ["Reports" tab](https://crowdin.com/project/django-girls-tutorial/settings#reports-details) in the Crowdin project settings. If you don't have permissions to do that, email us at [hello@djangogirls.org](mailto:hello@djangogirls.org) (sorry again, if that's the case).
 2. Choose `Custom report` from the left.
 3. Show the report for `Words translated`, report language `Spanish`. Then click on `Generate`. You will get a list of all contributors to your language, sorted by how much each has contributed. Yay!
-4. Add a nice thank you in your `es/README.md` file, [like so](https://github.com/DjangoGirls/tutorial/commit/4a12f8f554c842d8dc0a8484b768e4f2e7afec2e)
+4. Add a nice thank you to your `es/README.md` file, similar how it was done [here](https://github.com/DjangoGirls/tutorial/commit/4a12f8f554c842d8dc0a8484b768e4f2e7afec2e).
 
 Test in Gitbook locally
 ------

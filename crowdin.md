@@ -1,14 +1,12 @@
 # Crowdin
 
-We use Crowdin for translating tutorial.
+We use Crowdin for translating the Django Girls tutorial.
 
-Go to our [Crowdin page](https://crowdin.com/project/django-girls-tutorial) and check if the language you want to translate the tutorial is there already.
+Go to our [Crowdin page](https://crowdin.com/project/django-girls-tutorial) and have a look if the language you want to translate the tutorial into is already listed. If so, all you need to do is to create a free account on Crowdin and start contributing.
 
-If so, all you need to do is to create a free account in Crowdin and start contributing!
-
-If the language is missing, you can tell us which language you want to help with by:
+If the language you want to help with is missing, you can tell us so by:
 
 * writing to us at hello@djangogirls.org or
-* creating a GitHub issue in our [tutorial](https://github.com/DjangoGirls/tutorial/issues/).
+* creating a GitHub issue in the repository for our [tutorial](https://github.com/DjangoGirls/tutorial/issues/).
 
-We will let you know as soon as we create a language in Crowdin. Once it happens, you can start translating! Yay!
+We will let you know as soon as we have added the language to our Crowdin page. Once that has happened, you can start translating, yay!

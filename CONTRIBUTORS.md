@@ -56,6 +56,11 @@ Swedish
 Tagalog
 -------
 
+Tamil
+-----
+
+Durairajaa, <durairajaa1992@gmail.com>
+
 Turkish
 -------
 

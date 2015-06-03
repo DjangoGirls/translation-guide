@@ -45,6 +45,11 @@ Persian
 Polish
 ------
 
+Portuguese
+----------
+
+Tiago Henriques, <trinosauro@gmail.com>
+
 Portuguese, Brazilian
 ---------------------
 

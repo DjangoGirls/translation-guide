@@ -40,7 +40,7 @@ django_templates/README.md
 extend_your_application/README.md
 template_extending/README.md
 ```
-The code blocks should be wrapped in code fencess \`\`\` and the `{% csrf_token %}` should be wrapped in `{% raw %}{% endraw %}` blocks.  
+The code blocks should be wrapped in code fencess \`\`\` and the `{% raw %}{% csrf_token %}{% endraw %}` should be wrapped in `{% raw %}{% raw %}{% endraw %}{% endraw %}` blocks.  
 
 Copy images
 --------

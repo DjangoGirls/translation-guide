@@ -32,6 +32,15 @@ Fix what Crowdin broke
 1. You have to manually fix the `es/SUMMARY.md` file, [like here](https://github.com/DjangoGirls/tutorial/commit/b2fd8cd538db5107f9fb809282e0970f494a9314).
 2. You will also have to fix the Gitter badges, [like here](https://github.com/DjangoGirls/tutorial/commit/82322d14b15a85aab36f379c747055d9d0219e52).
 3. You also need to fix the list of links in the "What's next" chapter in the tutorial, [like here](https://github.com/DjangoGirls/tutorial/commit/9d47e214bb9e96b41f95be6c5010ff2138db4041).
+4. If the translation was built on top of the version for gitbook 1.5.0 you will need to fix code formatting. Gitbook 2.x builder uses the same templating syntax as Django does so it tends to break on the parts of the code that haven't been escaped. You will have to check the files:
+```
+css/README.md
+django_forms/README.md
+django_templates/README.md
+extend_your_application/README.md
+template_extending/README.md
+```
+The code blocks should be wrapped in code fencess \`\`\` and the `{% csrf_token %}` should be wrapped in `{% raw %}{% endraw %}` blocks.  
 
 Copy images
 --------

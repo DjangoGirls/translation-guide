@@ -32,6 +32,7 @@ Hungarian
 
 Italian
 -------
+Ambassador: Doraly Navarro, <doralynavarro@gmail.com>
 
 Japanese
 --------
@@ -52,6 +53,10 @@ Tiago Henriques, <trinosauro@gmail.com>
 
 Portuguese, Brazilian
 ---------------------
+Ambassador: Vivian Macedo, <vivianmacedo@gmail.com>
+
+Romanian
+--------
 
 Russian
 -------

@@ -54,6 +54,7 @@ Tiago Henriques, <trinosauro@gmail.com>
 Portuguese, Brazilian
 ---------------------
 Ambassador: Vivian Macedo, <vivianmacedo@gmail.com>
+Proofreader: Paula Grangeiro, <paula.alves.g@gmail.com>
 
 Romanian
 --------

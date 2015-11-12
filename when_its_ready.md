@@ -13,16 +13,15 @@ Here is an example PR for publishing a translation: https://github.com/DjangoGir
 Crowdin
 -------
 
-1. Go to the [Crowdin settings](https://crowdin.com/project/django-girls-tutorial/settings#translations) page.
-2. Click on the **Build project** button. If you don't have permissions to do that part, please email us at [hello@djangogirls.org](mailto:hello@djangogirls.org).
-3. After the build is done, click on the **Download** button next to the language you want to publish.
+1. You need one or two persons to proofread and validate your translation. If no one on your team has proofreader status, please email us at [hello@djangogirls.org](mailto:hello@djangogirls.org).
+2. When your translation is 100% validated, please email us at [hello@djangogirls.org](mailto:hello@djangogirls.org). We will send you a `.zip` file containing your translation and a `.xlsx` file that contains a list of all contributors to your language.
 
 Move files to the tutorial
 -------------
 
-1. Clone our tutorial from its master branch.
+1. [Fork](https://help.github.com/articles/fork-a-repo/) Django Girls tutorial [repository](https://github.com/DjangoGirls/tutorial) and clone your repository from its master branch.
 2. Create a new branch called `spanish` (`git checkout -b spanish`).
-3. Unzip the file you downloaded from Crowdin. In the unzipped folder you will see two subfolders: `es` and `_book`. Copy the folder named `es` and place it into the root directory of the tutorial (next to `en`, `pl`, `uk`).
+3. Unzip the file we sent to you. In the unzipped folder you will see one subfolder: `es`. Copy and place it into the root directory of the tutorial (next to `en`, `pl`, `uk`).
 4. Edit `LANGS.md` (found in the root directory of the tutorial) by adding a link to your language to it. Here is an [example](https://github.com/DjangoGirls/tutorial/commit/569f10512bb5642661093dcbcc0ed7683d65cb38).
 5. Commit this as a first version of your translation to the branch for your language.
 
@@ -32,15 +31,9 @@ Fix what Crowdin broke
 1. You have to manually fix the `es/SUMMARY.md` file, [like here](https://github.com/DjangoGirls/tutorial/commit/b2fd8cd538db5107f9fb809282e0970f494a9314).
 2. You will also have to fix the Gitter badges, [like here](https://github.com/DjangoGirls/tutorial/commit/82322d14b15a85aab36f379c747055d9d0219e52).
 3. You also need to fix the list of links in the "What's next" chapter in the tutorial, [like here](https://github.com/DjangoGirls/tutorial/commit/9d47e214bb9e96b41f95be6c5010ff2138db4041).
-4. If the translation was built on top of the version for gitbook 1.5.0 you will need to fix code formatting. Gitbook 2.x builder uses the same templating syntax as Django does so it tends to break on the parts of the code that haven't been escaped. You will have to check the files:
-```
-css/README.md
-django_forms/README.md
-django_templates/README.md
-extend_your_application/README.md
-template_extending/README.md
-```
-The code blocks should be wrapped in code fencess \`\`\` and the `{% raw %}{% csrf_token %}{% endraw %}` should be wrapped in `{% raw %}{% raw %}{% endraw %}{% endraw %}` blocks.  
+4. If the translation was built on top of the version for gitbook 1.5.0 you will need to fix code formatting. Gitbook 2.x builder uses the same templating syntax as Django does so it tends to break on the parts of the code that haven't been escaped. You will have to check every `.md` files: remove one level of indentation and wrap the code blocks in code fencess \`\`\`. The `{% raw %}{% csrf_token %}{% endraw %}` should be wrapped in `{% raw %}{% raw %}{% endraw %}{% endraw %}` blocks.
+5. You will have to add `/` at the beginning of every paths in `{% include %}`, [like here](https://github.com/DjangoGirls/tutorial/commit/069f186d91d9787fff28227c60c89cd76d3bc92f). Files that need to be changed are: `installation/README.md`, `python_installation/README.md`, `django_installation/README.md`, `deploy/README.md` and `code_editor/README.md`.
+6. Make yourself some tea, have some chocolate or just take a little time for yourself! You made an amazing job <3
 
 Copy images
 --------
@@ -55,25 +48,23 @@ find en -name "images"
 This will list all of directories containing images that you need to copy. You can also copy and paste this:
 
 ```
-LNG=es && cp -r en/css/images $LNG/css/images && cp -r en/django_admin/images $LNG/django_admin/images && cp -r en/django_forms/images $LNG/django_forms/images && cp -r en/django_start_project/images $LNG/django_start_project/images && cp -r en/django_templates/images $LNG/django_templates/images && cp -r en/django_urls/images $LNG/django_urls/images && cp -r en/django_views/images $LNG/django_views/images && cp -r en/domain/images $LNG/domain/images && cp -r en/extend_your_application/images $LNG/extend_your_application/images && cp -r en/how_the_internet_works/images $LNG/how_the_internet_works/images && cp -r en/html/images $LNG/html/images && cp -r en/images $LNG/images && cp -r en/python_introduction/images $LNG/python_introduction/images
+LNG=es && cp -r en/css/images $LNG/css/images && cp -r en/django_admin/images $LNG/django_admin/images && cp -r en/django_forms/images $LNG/django_forms/images && cp -r en/django_start_project/images $LNG/django_start_project/images && cp -r en/django_templates/images $LNG/django_templates/images && cp -r en/django_urls/images $LNG/django_urls/images && cp -r en/django_views/images $LNG/django_views/images && cp -r en/extend_your_application/images $LNG/extend_your_application/images && cp -r en/how_the_internet_works/images $LNG/how_the_internet_works/images && cp -r en/html/images $LNG/html/images && cp -r en/images $LNG/images && cp -r en/python_introduction/images $LNG/python_introduction/images && cp -r en/deploy/images/ $LNG/deploy/images && cp -r en/python_installation/images/ $LNG/python_installation/images
 ```
 The above command should cover all directories unless new ones got added since this guide was written. Make sure to check for new directories.
 
 Add credits in es/README.md
 -------
 
-1. Go to the ["Reports" tab](https://crowdin.com/project/django-girls-tutorial/settings#reports-details) in the Crowdin project settings. If you don't have permissions to do that, email us at [hello@djangogirls.org](mailto:hello@djangogirls.org) (sorry again, if that's the case).
-2. Choose **Custom report** from the left.
-3. Show the report for **Words translated**, report language **Spanish**. Then click on **Generate**. You will get a list of all contributors to your language, sorted by how much each has contributed. Yay!
-4. Add a nice thank-you note to your `es/README.md` file, similar to how it was done [here](https://github.com/DjangoGirls/tutorial/commit/4a12f8f554c842d8dc0a8484b768e4f2e7afec2e).
+1. Open the `.xlsx` we sent you: it contains a list of all contributors to your language.
+2. Add a nice thank-you note to your `es/README.md` file, similar to how it was done [here](https://github.com/DjangoGirls/tutorial/commit/4a12f8f554c842d8dc0a8484b768e4f2e7afec2e).
 
 Test in Gitbook locally
 ------
 
-1. Download the [Gitbook editor](https://github.com/GitbookIO/editor).
+1. Download the [Gitbook editor](https://www.gitbook.com/editor/).
 2. Open the directory containing the tutorial with the Gitbook editor.
 3. Go to the menu `Book > Preview Website`.
-4. Click through the tutorial in the language you added and make sure everything looks alright.
+4. Click through the tutorial in the language you added and make sure everything looks alright. If you can't find your translation, check if you're in the good branch.
 
 Submit a PR
 -----------

@@ -2,7 +2,7 @@
 
 We use Crowdin for translating the Django Girls tutorial.
 
-Go to our [Crowdin page](https://crowdin.com/project/django-girls-tutorial) and have a look if the language you want to translate the tutorial into is already listed. If so, all you need to do is to create a free account on Crowdin and start contributing.
+Go to our [Crowdin page](https://crowdin.com/project/django-girls-tutorial) and have a look. If the language you want to translate the tutorial into is already listed, all you need to do is to create a free account on Crowdin and start contributing.
 
 If the language you want to help with is missing, you can tell us so by:
 

@@ -32,7 +32,7 @@ Fix what Crowdin broke
 2. You will also have to fix the Gitter badges, [like here](https://github.com/DjangoGirls/tutorial/commit/82322d14b15a85aab36f379c747055d9d0219e52).
 3. You also need to fix the list of links in the "What's next" chapter in the tutorial, [like here](https://github.com/DjangoGirls/tutorial/commit/9d47e214bb9e96b41f95be6c5010ff2138db4041).
 4. If the translation was built on top of the version for gitbook 1.5.0 you will need to fix code formatting. Gitbook 2.x builder uses the same templating syntax as Django does so it tends to break on the parts of the code that haven't been escaped. You will have to check every `.md` files: remove one level of indentation and wrap the code blocks in code fencess \`\`\`. The `{% raw %}{% csrf_token %}{% endraw %}` should be wrapped in `{% raw %}{% raw %}{% endraw %}{% endraw %}` blocks.
-5. You will have to add `/` at the beginning of every paths in `{% include %}`, [like here](https://github.com/DjangoGirls/tutorial/commit/069f186d91d9787fff28227c60c89cd76d3bc92f). Files that need to be changed are: `installation/README.md`, `python_installation/README.md`, `django_installation/README.md`, `deploy/README.md` and `code_editor/README.md`.
+5. You will have to add `/` at the beginning of every paths in `{% raw %}{% include %}{% endraw %}`, [like here](https://github.com/DjangoGirls/tutorial/commit/069f186d91d9787fff28227c60c89cd76d3bc92f). Files that need to be changed are: `installation/README.md`, `python_installation/README.md`, `django_installation/README.md`, `deploy/README.md` and `code_editor/README.md`.
 6. Make yourself some tea, have some chocolate or just take a little time for yourself! You made an amazing job <3
 
 Copy images

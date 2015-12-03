@@ -14,6 +14,6 @@ Crowdin
 
 Django Girls Tutorial's translations are hosted on [Crowdin](https://crowdin.com/project/django-girls-tutorial).
 
-If you want to join an existing translation team or launch a new translation, [contact us](mailto:hello@djangogirls.org).
+If you want to join an existing translation team or launch a new translation, send an [email](mailto:translations@djangogirls.org) to the translation managers or [contact us](mailto:hello@djangogirls.org).
 
-To be published, a translation needs to be validated by a proofreader. If you don't know if a proofreader is on your team or if you want to be one, send us an [email](mailto:hello@djangogirls.org).
+To be published, a translation needs to be validated by a proofreader. If you don't know if a proofreader is on your team or if you want to be one, send an [email](mailto:translations@djangogirls.org) to the translation managers or [contact us](mailto:hello@djangogirls.org).

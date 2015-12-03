@@ -13,8 +13,8 @@ Here is an example PR for publishing a translation: https://github.com/DjangoGir
 Crowdin
 -------
 
-1. You need one or two persons to proofread and validate your translation. If no one on your team has proofreader status, please email us at [hello@djangogirls.org](mailto:hello@djangogirls.org).
-2. When your translation is 100% validated, please email us at [hello@djangogirls.org](mailto:hello@djangogirls.org). We will send you a `.zip` file containing your translation and a `.xlsx` file that contains a list of all contributors to your language.
+1. You need one or two persons to proofread and validate your translation. If no one on your team has proofreader status, please send an [email](mailto:translations@djangogirls.org) to the translations managers or [contact us](mailto:hello@djangogirls.org).
+2. When your translation is 100% validated, contact the [translations managers](mailto:translations@djangogirls.org). They will send you a `.zip` file containing your translation and a `.xlsx` file that contains a list of all contributors to your language.
 
 Move files to the tutorial
 -------------

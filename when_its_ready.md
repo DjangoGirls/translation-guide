@@ -71,4 +71,6 @@ Submit a PR
 
 Create a new pull request to our master branch and let others test your translation. ;)
 
+Please mention in the pull request title which language you've edited - this will help the right people to find it and review it!
+
 Ta-da!

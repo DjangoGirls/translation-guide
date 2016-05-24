@@ -1,6 +1,10 @@
 Translation Guide
 =======
 
+> **Info** This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-sa/4.0/
+
 More and more people are contacting Django Girls asking how they can translate the tutorial into their native language.
 
 If you are one of these people, we would like to thank you first! We need people like you, you are amazing!

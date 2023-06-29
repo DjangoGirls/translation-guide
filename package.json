@@ -1,0 +1,22 @@
+{
+  "name": "translation-guide",
+  "version": "1.0.0",
+  "description": "Translation Guide =======",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook-plugin-ga": "^2.0.0",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-heading-anchors": "^1.0.3",
+    "gitbook-plugin-sidebar-ads": "^1.0.0",
+    "honkit": "^4.0.7"
+  },
+  "keywords": [],
+  "author": "Django Girls",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/DjangoGirls/translation-guide/issues"
+  },
+  "homepage": "https://github.com/DjangoGirls/translation-guide#readme"
+}
